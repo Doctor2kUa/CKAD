@@ -7,3 +7,7 @@ else
   echo "Error: Ingress is not using networking.k8s.io/v1, current value: $INGRESS_API_VERSION"
   exit 1
 fi
+
+kubectl delete ingress myapp-ingress --ignore-not-found
+kubectl delete deployment deprecated-nginx --ignore-not-found
+kubectl delete service deprecated-nginx --ignore-not-found
