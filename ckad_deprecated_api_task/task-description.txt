@@ -1,0 +1,12 @@
+CKAD Practice Task: Deprecated API Versions
+
+Task:
+You have been provided a Kubernetes deployment YAML file that uses a deprecated API version (apps/v1beta1).
+
+Objectives:
+1. Identify the deprecated API version used in the provided YAML.
+2. Modify the deployment to use the current stable API version.
+3. Apply the corrected YAML to your Kubernetes cluster.
+
+Validation:
+A bash script has been provided to validate if the deployment is successfully running on your Kubernetes cluster after your modifications.
