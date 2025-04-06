@@ -1,0 +1,18 @@
+Task Instructions:
+
+1. You are provided with three Kubernetes YAML files:
+   - deployment.yaml: A Deployment for an nginx application.
+   - service.yaml: A Service to expose the application.
+   - deprecated-ingress.yaml: An Ingress resource using a deprecated API version (extensions/v1beta1).
+
+2. Your tasks:
+   a. Update the Ingress YAML file (deprecated-ingress.yaml) to use the current API version (networking.k8s.io/v1).
+   b. Update any required fields in the Ingress spec to conform to the new API version requirements.
+   c. Deploy the updated resources into your Kubernetes cluster.
+   d. Use the provided bash script (check.sh) to verify that the Ingress resource is using the updated API version.
+
+3. Additional Requirements:
+   - Ensure that the Service referenced by the Ingress is correct.
+   - Verify that traffic is routed correctly through the Ingress to your application.
+
+Good luck!
